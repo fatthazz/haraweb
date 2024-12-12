@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anon Computer Repair Shop</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2c3e50; /* Dark background */
+            color: #ecf0f1; /* Light text color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer is at the bottom */
+        }
+        .hero {
+            background-image: url('    https://images.pexels.com/photos/7639370/pexels-photo-7639370.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            position: relative;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        nav a {
+            color: #ecf0f1; /* Light text color */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .book-button {
+            background-color: #27ae60; /* Dark green button */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s;
+        }
+        .book-button:hover {
+            background-color: #219150; /* Darker green on hover */
+        }
+        .about {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #ecf0f1; /* Light background for contrast */
+            color: #2c3e50; /* Dark text color */
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .contact-info a {
+            margin: 0 10px;
+            color: #27ae60; /* Dark green */
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .contact-info span {
+            
+            margin-left: 5px; /* Space between icon and text */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            flex: 1; /* Allow the container to grow and push the footer down */
+        }
+        h2 {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service {
+            background-color: white; /* White background for services */
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 250px;
+            text-align: center;
+            transition: transform 0.3s;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color */
+        }
+        .service:hover {
+            transform: scale(1.05);
+        }
+        .service h3 {
+            margin: 10px 0;
+            color: #27ae60; /* Dark green */
+        }
+        .service p {
+            font-size: 0.9em;
+            color: black; /* Black text color for paragraphs */
+        }
+        .service i {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #27ae60; /* Dark green */
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color:#324033; /* Dark green footer */
+            color: white;
+        }
+        .whatsapp-icon {
+            color: #25D366; /* WhatsApp green color */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About Us</a>
+        </nav>
+        <h1>Anon Computer Repair</h1>
+        <a href="https://wa.me/601173682805" class="book-button">Book Now</a>
+    </div>
+
+    
+
+        <h2 id="services">Our Services</h2>
+        <div class="services">
+            <a href="#technical-support" class="service">
+                <i class="fas fa-headset"></i>
+                <h3>Technical Support</h3>
+                <p>Expert assistance for all your tech needs.</p>
+            </a>
+            <a href="#computer-repair" class="service">
+                <i class="fas fa-laptop"></i>
+                <h3>Computer Repair</h3>
+                <p>Fixing hardware and software issues efficiently.</p>
+            </a>
+            <a href="#network-setup" class="service">
+                <i class="fas fa-network-wired"></i>
+                <h3>Network Setup and Support</h3>
+                <p>Reliable network configuration and troubleshooting.</p>
+            </a>
+            <a href="#software-installation" class="service">
+                <i class="fas fa-cogs"></i>
+                <h3>Software Installation and Configuration</h3>
+                <p>Setup and configuration of essential software.</p>
+            </a>
+            <a href="#data-backup" class="service">
+                <i class="fas fa-database"></i>
+                <h3>Data Backup and Recovery</h3>
+                <p>Safeguarding and restoring your valuable data.</p>
+            </a>
+            <a href="#virus-removal" class="service">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Virus and Malware Removal</h3>
+                <p>Protecting your system from harmful threats.</p>
+            </a>
+            <a href="#upgrades" class="service">
+                <i class="fas fa-arrow-up"></i>
+                <h3>Upgrades and Custom Builds</h3>
+                <p>Enhancing performance with tailored solutions.</p>
+            </a>
+        </div>
+
+        <h2 id="contact">Contact Us</h2>
+        <div class="contact-info">
+            <a href=" https://wa.me/601173682805" target="_blank" class="whatsapp-icon">
+                <i class="fab fa-whatsapp fa-2x"></i>
+                <span>(60) 1173682805</span>
+            </a>
+            <a href="mailto:ohraett@gmail.com">
+                <i class="fas fa-envelope fa-2x"></i>
+                <span>ohraett@gmail.com</span>
+            </a>
+        </div>
+
+        <div class="about" id="about">
+            <h2>About Us</h2>
+            <p>Anon Computer Repair is a computer services on i-CATS but it's operate like terrorist</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 HaraWeb</p>
+    </footer>
+</body>
+</html>
